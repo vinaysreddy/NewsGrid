@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#ffffffcc;
+    --secondary-text-color:#dfdfdf;
+    --accent-color:#ff375f;
+    --accent-color-dark:#c63c57;    
+}
+
+body{
+    font-family: "Nunito";
+    color: var(--primary-text-color);
+    /* background-color: #1e1e1e; */
+    background-color: black;
+}
+p{
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin:auto ;
+    overflow: hidden;
+}
+nav{
+    background-color: #161616;
+    box-shadow: 0 0 4px black;
+    z-index: 99;
+    top:0;
+    left:0;
+    right: 0;
+    position: fixed;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.company-logo img{
+    width:30px;
+    border: none;
+}
+
+.nav-links ul{
+    gap:15px;
+    font-size: 18px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color: white;
+}
+
+.hover-link:active{
+    color: white;
+}
+
+.search-bar{
+height: 32px;
+gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: blue ;
+    border: 1px solid #ffffffcc;
+    /* outline: none; */
+    background: none;
+    color: #ffffffcc;
+    padding-inline: 12px;
+
+    font-family: "Nunito";
+}
+.search-button{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Nunito";
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card-header img{
+width: 360px;
+}
+
+.card
+{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px black;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+background-color: #1e1e1e;
+}

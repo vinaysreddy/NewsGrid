@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>News Grid</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="main-nav flex container">
+        <a href="#" class="company-logo"
+          ><img src="assets/logo.png" alt=""
+        /></a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-item">Ipl</li>
+            <li class="hover-link nav-item">Finance</li>
+            <li class="hover-link nav-item">Politics</li>
+            <li class="hover-link nav-item">Politics</li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input type="text" class="news-input" placeholder="Eg: Science" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="cards-container container flex">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBmDINdlC-Ux9SQs0_U1u_CfYIkKjEv4J3CgP6axaRFv-xC4W7gucfHvDA7_IbKIOJX4&usqp=CAU"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3>This is the title</h3>
+            <h6>End Gadget 26/08/2023</h6>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium consequuntur ducimus eligendi quam perspiciatis
+              doloribus accusantium quos officia eum itaque?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
