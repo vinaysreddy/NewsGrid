@@ -20,6 +20,7 @@
     --accent-color: #63B7E1;
     --accent-color-dark: #6c5dd3;
     --body-bg-color: #101219;
+    --card-bg-color: #1b1d25;
 }
 
 body {
@@ -80,6 +81,7 @@ nav {
     padding-block: 8px;
 }
 
+
 .company-logo img {
     width: 30px;
     border: none;
@@ -97,8 +99,8 @@ nav {
     background: linear-gradient(to right, #EABEB9 0%, #63B7E1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    
+
+
 }
 
 .nav-links ul {
@@ -115,6 +117,10 @@ nav {
 }
 
 .hover-link:active {
+    color: var(--accent-color);
+}
+
+.nav-item.active {
     color: var(--accent-color);
 }
 
@@ -187,10 +193,10 @@ main {
 } */
 
 .card {
-    background-color: #1b1d25;
+    background-color: var(--card-bg-color);
     /*https://cssgradient.io/*/
     width: 360px;
-    min-height: 450px;
+    min-height: 470px;
     overflow: hidden;
     cursor: pointer;
     border-radius: 14px;
@@ -204,7 +210,7 @@ main {
     box-shadow: 1px 1px 8px black;
     background-color: #1f1f1fcc;
     transform: translateY(-5px);
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .card-header img {
@@ -221,11 +227,16 @@ main {
     font-size: 20px;
     color: #dfdfdf;
 
+
+
+}
+
+
+.text-gradient {
     background: #EABEB9;
     background: linear-gradient(to right, #EABEB9 0%, #63B7E1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 p {
@@ -234,4 +245,19 @@ p {
 
 .news-source {
     margin-block: 12px;
+}
+
+
+.error-message-card {
+    width: 100%;
+    min-height: 10px;
+    border-radius: 14px;
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    display: none;
+}
+
+.error-message-card h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }

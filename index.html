@@ -10,28 +10,32 @@
     
     <nav>
       <div class="main-nav flex container">
-        <a href="#" class="company-logo"
-          ><img src="assets/logo.png" alt="" /><span class="logo-text"
+        <a href="#" onclick="reloadPage()" class="company-logo"><img src="assets/logo.png" alt="" /><span class="logo-text"
             ><h3>News Grid</h3></span
           ></a>
 
         <div class="nav-links">
           <ul class="flex">
-            <li class="hover-link nav-item">Sports</li>
-            <li class="hover-link nav-item">Finance</li>
-            <li class="hover-link nav-item">Technology</li>
-            <li class="hover-link nav-item">Music</li>
-            <li class="hover-link nav-item">Games</li>
+            <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+            <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            <li class="hover-link nav-item" id="music" onclick="onNavItemClick('music')">Music</li>
+            <li class="hover-link nav-item" id="games" onclick="onNavItemClick('games')">Games</li>
           </ul>
         </div>
         <div class="search-bar flex1">
-          <input type="text" class="news-input" placeholder="Eg: Science" />
-          <button class="search-button">Search</button>
+          <input type="text" class="news-input" id="news-input" placeholder="Eg: Science" />
+          <button class="search-button" id="search-button">Search</button>
         </div>
       </div>
     </nav>
     <main>
       <div class="cards-container container flex pintrest" id="cards-container"></div>
+      <div  class="error-message-card container" id="error-message-card"> <h3 class="error-title text-gradient" id="error-title">Content for this news article is currently unavailable.Content for this news article is currently unavailable.</h3>
+      <p class="error-card-content">
+        This is a basic learning project.The reason why you might be seeing is because you can only do 100 api calls for 24 hrs<br><br>Github repository : https//github.io<br>Developer : Vinay Sekhar Reddy<br>email : 18h61a0511@cvsr.ac.in
+
+      </p></div>
     </main>
     
     
@@ -46,7 +50,7 @@
           />
         </div>
         <div class="card-content">
-          <h3 id="news-title">This is the title1</h3>
+          <h3 id="news-title" class="text-gradient">This is the title1</h3>
           <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
           <p class="news-desc" id="news-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. fnon atque
