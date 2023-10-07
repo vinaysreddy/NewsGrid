@@ -18,7 +18,22 @@ function bindData(articles) {
     articles.forEach(article => {
         if (!article.urlToImage) return;
         const cardClone = newsCardTemplate.content.cloneNode(true);
+        fillDataInCard(cardClone,article);
         cardsContainer.appendChild(cardClone);
     });
+
+}
+
+function fillDataInCard(cardClone,article){
+    const newsImage=cardClone.querySelector('#news-img');
+    const newsTitle=cardClone.querySelector('#news-title');
+    const newsSource=cardClone.querySelector('#news-source');
+    const newsDescription=cardClone.querySelector('#news-desc');
+
+
+    newsImage.src=article.urlToImage;
+    newsTitle.innerHTML=article.title;
+    newsSource.innerHTML=article.publishedAt;
+    newsDescription.innerHTML=article.description;
 
 }

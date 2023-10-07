@@ -9,7 +9,7 @@
 :root {
     --primary-text-color: #ffffffcc;
     --secondary-text-color: #dfdfdf;
-    --accent-color: #5D12D2;
+    --accent-color: #FF6969;
     --accent-color-dark: #005ab9;
     --body-bg-color: #131313;
 }
@@ -137,9 +137,17 @@ main {
     align-items: start;
 }
 
+/*remove flex classs from cards-container*/
+
+/* .pintrest {
+    columns: 3;
+} */
 
 .card {
-    background-color: #323232;
+    /* background-color: #323232; */
+    /*https://cssgradient.io/*/
+    background: rgb(28, 28, 28);
+    background: linear-gradient(270deg, rgba(28, 28, 28, 1) 0%, rgba(5, 5, 5, 1) 100%);
     width: 360px;
     min-height: 400px;
     overflow: hidden;
@@ -148,12 +156,14 @@ main {
     border: 2px solid black;
     margin-bottom: 45px;
     transition: all 0.3s ease;
+   
 }
 
 .card:hover {
     box-shadow: 1px 1px 8px black;
     background-color: #1f1f1fcc;
     transform: translateY(-5px);
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .card-header img {
@@ -167,7 +177,7 @@ main {
 }
 
 .card-content h3 {
-    font-size: 30px;
+    font-size: 20px;
     color: #dfdfdf;
 
 }
