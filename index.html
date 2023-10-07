@@ -10,43 +10,52 @@
     <nav>
       <div class="main-nav flex container">
         <a href="#" class="company-logo"
-          ><img src="assets/logo.png" alt=""
-        /></a>
+          ><img src="assets/logo.png" alt="" /><span class="logo-text"
+            ><h3>News Grid</h3></span
+          ></a>
+
         <div class="nav-links">
           <ul class="flex">
-            <li class="hover-link nav-item">Ipl</li>
+            <li class="hover-link nav-item">Cricket</li>
             <li class="hover-link nav-item">Finance</li>
             <li class="hover-link nav-item">Politics</li>
             <li class="hover-link nav-item">Politics</li>
           </ul>
         </div>
-        <div class="search-bar flex">
+        <div class="search-bar flex1">
           <input type="text" class="news-input" placeholder="Eg: Science" />
           <button class="search-button">Search</button>
         </div>
       </div>
     </nav>
     <main>
-      <div class="cards-container container flex">
-        <div class="card">
-          <div class="card-header">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBmDINdlC-Ux9SQs0_U1u_CfYIkKjEv4J3CgP6axaRFv-xC4W7gucfHvDA7_IbKIOJX4&usqp=CAU"
-              alt="news-image"
-              id="news-img"
-            />
-          </div>
-          <div class="card-content">
-            <h3>This is the title</h3>
-            <h6>End Gadget 26/08/2023</h6>
-            <p class="news-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium consequuntur ducimus eligendi quam perspiciatis
-              doloribus accusantium quos officia eum itaque?
-            </p>
-          </div>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+    
+    
+    
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-b88adde6a57e40aa85818820aa87a6cd"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the title1</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. fnon atque
+            facilis officiis iste quas velit laborum, esse modi hic doloribus id
+            a soluta incidunt odio suscipit perspiciatis? Ipsum exercitationem
+            beatae commodi esse quis cum delectus fugiat. Vel nemo animi
+            quisquam earum, deleniti quasi ab
+          </p>
         </div>
       </div>
-    </main>
+    </template>
+  <script src="script.js"></script>
   </body>
 </html>

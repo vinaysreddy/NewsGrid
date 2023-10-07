@@ -8,15 +8,16 @@
 :root{
     --primary-text-color:#ffffffcc;
     --secondary-text-color:#dfdfdf;
-    --accent-color:#ff375f;
-    --accent-color-dark:#c63c57;    
+    --accent-color:#5D12D2  ; 
+    --accent-color-dark:#005ab9;    
+    --body-bg-color:#131313;
 }
 
 body{
     font-family: "Nunito";
     color: var(--primary-text-color);
     /* background-color: #1e1e1e; */
-    background-color: black;
+    background-color: var(--body-bg-color);
 }
 p{
     color: var(--secondary-text-color);
@@ -40,8 +41,9 @@ ul{
     overflow: hidden;
 }
 nav{
-    background-color: #161616;
-    box-shadow: 0 0 4px black;
+    background-color: #000000;
+    opacity: 0.9;
+    box-shadow: 0 0 3px #0000000;
     z-index: 99;
     top:0;
     left:0;
@@ -58,10 +60,18 @@ nav{
     width:30px;
     border: none;
 }
-
+.logo-text h3{
+   margin: 0;
+   padding: 0;
+   display: inline;
+   margin-left: 10px;
+   font-size: 25px;
+   text-decoration: none;
+   color: #d0d0d0;
+}
 .nav-links ul{
     gap:15px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .hover-link{
@@ -73,7 +83,7 @@ nav{
 }
 
 .hover-link:active{
-    color: white;
+    color: var(--accent-color);
 }
 
 .search-bar{
@@ -83,16 +93,14 @@ gap: 8px;
 .news-input{
     width: 200px;
     height: 100%;
-    padding: 12px;
     border-radius: 4px;
-    background-color: blue ;
-    border: 1px solid #ffffffcc;
-    /* outline: none; */
+    outline: none;
     background: none;
-    color: #ffffffcc;
-    padding-inline: 12px;
-
+    border: 1px solid #ffffffcc;
+    color: #ffffffcc; 
+    padding-inline: 12px; 
     font-family: "Nunito";
+    margin: 0;
 }
 .search-button{
     background-color: var(--accent-color);
@@ -115,22 +123,50 @@ main{
 }
 
 .cards-container{
-    justify-content: space-between;
+     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
-    align-items: start;
+    align-items: start; 
 }
-.card-header img{
-width: 360px;
-}
+
 
 .card
 {
+    background-color: #323232;
     width: 360px;
     min-height: 400px;
-    box-shadow: 0 0 4px black;
-    border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
-background-color: #1e1e1e;
+    border-radius: 14px;   
+    border: 2px solid black;
+    margin-bottom: 45px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px black;
+    background-color: #1f1f1fcc;
+    transform: translateY(-5px);
+}
+
+.card-header img{
+    width: 100%; 
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.card-content h3{
+    font-size: 30px;
+    color: #dfdfdf;
+    
+}
+p{
+    color: #ffffffcc;
+}
+
+.news-source{
+    margin-block:12px;
 }
