@@ -1,108 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-text-color:#ffffffcc;
-    --secondary-text-color:#dfdfdf;
-    --accent-color:#5D12D2  ; 
-    --accent-color-dark:#005ab9;    
-    --body-bg-color:#131313;
+:root {
+    --primary-text-color: #ffffffcc;
+    --secondary-text-color: #dfdfdf;
+    --accent-color: #5D12D2;
+    --accent-color-dark: #005ab9;
+    --body-bg-color: #131313;
 }
 
-body{
+body {
     font-family: "Nunito";
     color: var(--primary-text-color);
     /* background-color: #1e1e1e; */
     background-color: var(--body-bg-color);
 }
-p{
+
+p {
     color: var(--secondary-text-color);
     line-height: 1.4rem;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.container{
+.container {
     max-width: 1180px;
-    margin:auto ;
+    margin: auto;
     overflow: hidden;
 }
-nav{
+
+nav {
     background-color: #000000;
     opacity: 0.9;
     box-shadow: 0 0 3px #0000000;
     z-index: 99;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     right: 0;
     position: fixed;
 }
 
-.main-nav{
+.main-nav {
     justify-content: space-between;
     padding-block: 8px;
 }
 
-.company-logo img{
-    width:30px;
+.company-logo img {
+    width: 30px;
     border: none;
 }
-.logo-text h3{
-   margin: 0;
-   padding: 0;
-   display: inline;
-   margin-left: 10px;
-   font-size: 25px;
-   text-decoration: none;
-   color: #d0d0d0;
+
+.logo-text h3 {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #d0d0d0;
 }
-.nav-links ul{
-    gap:15px;
+
+.nav-links ul {
+    gap: 15px;
     font-size: 15px;
 }
 
-.hover-link{
+.hover-link {
     cursor: pointer;
 }
 
-.hover-link:hover{
+.hover-link:hover {
     color: white;
 }
 
-.hover-link:active{
+.hover-link:active {
     color: var(--accent-color);
 }
 
-.search-bar{
-height: 32px;
-gap: 8px;
+.search-bar {
+    height: 32px;
+    gap: 8px;
 }
-.news-input{
+
+.news-input {
     width: 200px;
     height: 100%;
     border-radius: 4px;
     outline: none;
     background: none;
     border: 1px solid #ffffffcc;
-    color: #ffffffcc; 
-    padding-inline: 12px; 
+    color: #ffffffcc;
+    padding-inline: 12px;
     font-family: "Nunito";
     margin: 0;
 }
-.search-button{
+
+.search-button {
     background-color: var(--accent-color);
     color: white;
     padding: 8px 24px;
@@ -112,61 +121,61 @@ gap: 8px;
     cursor: pointer;
 }
 
-.search-button:hover{
+.search-button:hover {
     background-color: var(--accent-color-dark);
 }
 
 
-main{
+main {
     padding-block: 20px;
     margin-top: 80px;
 }
 
-.cards-container{
-     justify-content: space-between;
+.cards-container {
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: start; 
+    align-items: start;
 }
 
 
-.card
-{
+.card {
     background-color: #323232;
     width: 360px;
     min-height: 400px;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 14px;   
+    border-radius: 14px;
     border: 2px solid black;
     margin-bottom: 45px;
     transition: all 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 1px 1px 8px black;
     background-color: #1f1f1fcc;
     transform: translateY(-5px);
 }
 
-.card-header img{
-    width: 100%; 
+.card-header img {
+    width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
-.card-content{
+.card-content {
     padding: 12px;
 }
 
-.card-content h3{
+.card-content h3 {
     font-size: 30px;
     color: #dfdfdf;
-    
+
 }
-p{
+
+p {
     color: #ffffffcc;
 }
 
-.news-source{
-    margin-block:12px;
+.news-source {
+    margin-block: 12px;
 }
