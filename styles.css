@@ -54,19 +54,10 @@ ul {
     overflow: hidden;
 }
 
-/* nav {
-    background-color: #000000;
-    opacity: 0.9;
-    box-shadow: 0 0 3px #0000000;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-} */
+
 
 nav {
-    background-color: #000;
+    background-color: #000000cc;
     box-shadow: 0 0 3px #000000;
     z-index: 99;
     top: 0;
@@ -82,10 +73,16 @@ nav {
 }
 
 
-.company-logo img {
-    width: 30px;
-    border: none;
+.company-logo {
+    display: flex;
+    align-items: center;
 }
+
+.company-logo img {
+    width: 35px;
+    height: 35px;
+}
+
 
 .logo-text h3 {
     margin: 0;
@@ -255,6 +252,7 @@ p {
     background-color: var(--card-bg-color);
     padding: 20px;
     display: none;
+    border: 1px solid black;
 }
 
 .error-message-card h3 {

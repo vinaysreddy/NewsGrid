@@ -10,14 +10,25 @@ async function fetchNews(query) {
     const response = await fetch(`${URL}${query}&apiKey=${API_KEY}`);
     const data = await response.json();
     console.log(data);
-    if (data.code==="rateLimited") {
+
+    if (data.code === "rateLimited") {
+
+        errorCard.style.display = "block";
+
+        const errorTitle = document.getElementById('error-title')
+        errorTitle.innerHTML = ":( API call rate limit exceeded. You can only make a limited number of API calls within a specified time frame. Please wait and try again later."
+
+    } else if (data.totalResults === 0) {
         const errorCard = document.getElementById('error-message-card');
         errorCard.style.display = "block";
 
-        const errorTitle=document.getElementById('error-title')
-        errorTitle.innerHTML=":( API call rate limit exceeded. You can only make a limited number of API calls within a specified time frame. Please wait and try again later."
+        const errorTitle = document.getElementById('error-title')
+        errorTitle.innerHTML = "Content for this news article is currently unavailable."
 
-    } else {
+
+    }
+
+    else {
         const errorCard = document.getElementById('error-message-card');
         errorCard.style.display = "none"; // Hide the error message if there are articles
     }
