@@ -1,6 +1,6 @@
 # NewsGrid
 
-View the webisite in the belo link 
+View the webisite in the below link 
 [screen-capture.webm](https://github.com/vinaysreddy/NewsGrid/assets/62655250/a1e6b71a-6daf-4b4c-b74c-3d126150e8df)
 
 Note : <br>
