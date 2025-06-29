@@ -95,7 +95,7 @@ function handleSearch() {
     fetchNews(query);
     currentSelectedNav?.classList.remove('active');
 }
-
+//hi
 
 function reloadPage() {
     fetchNews(defaultHomepageSearchQuery);
